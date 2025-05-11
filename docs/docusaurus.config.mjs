@@ -8,7 +8,7 @@ export default {
   "tagline": "Dinosaurs are cool",
   "favicon": "img/favicon.ico",
   "url": "https://mariebonifacio.github.io",
-  "baseUrl": '/parcel-iot-kafka/'
+  "baseUrl": '/parcel-iot-kafka/',
   "organizationName": "facebook",
   "projectName": "docusaurus",
   "onBrokenLinks": "warn",
