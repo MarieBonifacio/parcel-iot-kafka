@@ -17,11 +17,8 @@ const sidebars: SidebarsConfig = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   tutorialSidebar: [
     'intro',
-    {
-      type: 'category',
-      label: 'API',
-      items: ['intro'],
-    },
+    'plan',
+    // plus tard : 'kafka-producer-consumer',
   ],
 };
 
