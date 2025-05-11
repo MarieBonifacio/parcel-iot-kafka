@@ -7,10 +7,10 @@ export default {
   "title": "My Site",
   "tagline": "Dinosaurs are cool",
   "favicon": "img/favicon.ico",
-  "url": "https://your-docusaurus-site.example.com",
-  "baseUrl": "/",
+  "url": "https://MarieBonifacio.github.io",
+  "baseUrl": "/parcel-iot-kafka/",
   "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "projectName": "parcel-iot-kafka",
   "onBrokenLinks": "warn",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
