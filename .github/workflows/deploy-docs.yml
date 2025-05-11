@@ -1,0 +1,26 @@
+name: deploy-docs
+on:
+  push:
+    branches: [main]           # ❶ déclenché à chaque push sur main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest     # ❷ VM Linux gratuite
+    steps:
+      - uses: actions/checkout@v4     # ❸ récupère ton code
+
+      # Installe Node pour pouvoir exécuter npm
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+
+      # ❹ Installe les dépendances du site Docusaurus
+      - run: npm --prefix docs ci     # --prefix = "va dans docs/"
+
+      # ❺ Construit le site statique dans docs/build
+      - run: npm --prefix docs run build
+
+      # ❻ Publie docs/build sur la branche gh-pages
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/build
