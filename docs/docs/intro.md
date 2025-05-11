@@ -1,5 +1,5 @@
 ---
-id: presentation
+id: intro
 title: Présentation
 ---
 
