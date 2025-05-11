@@ -1,16 +1,18 @@
 {
     "compilerOptions": {
-      // Active l'import par défaut depuis les modules CommonJS
-      "esModuleInterop": true,
-      // Active le nouveau transformateur React 18
-      "jsx": "react-jsx",
-      // Reconnaît les fichiers JSX/TSX
-      "allowJs": true,
-      "moduleResolution": "node",
-      "resolveJsonModule": true,
       "target": "ES2020",
       "module": "ES2020",
-      "strict": false               // (optionnel : assouplit pour démarrer)
+      "moduleResolution": "node",
+      "allowJs": true,
+      "resolveJsonModule": true,
+  
+      /* 👇 les deux options critiques */
+      "esModuleInterop": true,
+      "jsx": "react-jsx",
+  
+      /* facultatif pour éviter d’autres bruits au début */
+      "strict": false,
+      "skipLibCheck": true
     },
     "include": ["src", "docs"]
   }
